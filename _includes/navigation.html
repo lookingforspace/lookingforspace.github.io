@@ -1,0 +1,18 @@
+<!-- <nav>
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="navz current" {% else %} class="navz" {% endif %}>{{ item.name }}</a>
+  {% endfor %}
+</nav> -->
+
+<header class="page-header">
+	<h1 class="title">Looking for space</h1>
+	<nav>
+		<ul class="nav">
+	  {% for item in site.data.navigation %}
+	  	<li>
+			    <a href="{{ item.link }}" {% if page.url == item.link %}class="navz current" {% else %} class="navz" {% endif %}>{{ item.name }}</a>  
+	  	</li>	
+	  {% endfor %}		
+		</ul>
+	</nav>
+</header>
