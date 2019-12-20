@@ -5,7 +5,7 @@ collections:
 
 
 plugins:
-  - jekyll-paginat
+  - [jekyll-paginate, jekyll-seo-tag]
 
 
 
