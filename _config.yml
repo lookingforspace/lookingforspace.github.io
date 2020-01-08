@@ -13,3 +13,10 @@ paginate: 4
 paginate_path: "/posts/page:num/"
 
 permalink: /:categories/:title/
+
+
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: https-lookingforspace-github-io
