@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		{% if site.google_analytics %}
+		{% include analytics.html %}
+		{% endif %}
+		{% seo %} 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 		<title>
 			   {%if page.title %}
 			       {{ page.title }}
@@ -12,9 +17,7 @@
 		</title>
 		<link rel="stylesheet" href="/assets/css/styles.css">
 		<link rel="shortcut icon" type="image/png" href="/favicon.png">
-		{% if site.google_analytics %}
-			{% include analytics.html %}
-		{% endif %}
+
 
 		
 	</head>
